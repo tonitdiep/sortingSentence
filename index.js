@@ -1,8 +1,18 @@
 var sortSentence = function(s) {
+ let sentences = s.split(" ");
+    
+    // let resultS = [];
+    let resultS = new Array(sentences.length)
+   
+    for(let word of sentences){
+        let i = word.length -1
+       
+        resultS[word[i] - 1] = word.substring(0, i)
+       
+    }
+    return resultS.join(" ")
+};
 
-
-
-}
 
 //sorting
 /*
